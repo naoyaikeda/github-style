@@ -1,5 +1,30 @@
 # github-style
 
+## G.O.R.N Mod Rev.
+
+This theme has some changes from the original theme from MeiK2333. We have added YouTube inlines as shortcodes, and also transferred the social networking icons from Hugo PaperMod.
+
+### Extended Partials
+
+#### SNS Icons
+
+Same as Hugo PaperMod. Ported from Hugo PaperMod.
+
+```markdown
+        <div class="border-top color-border-secondary pt-3 mt-3 clearfix hide-sm hide-md">
+          <h2 class="mb-2 h4">Social Networks</h2>
+          {{ partial "social_icons.html" . }}
+        </div>
+```
+
+### Extended Short Codes
+
+#### youtube
+
+##### usage
+
+{{< youtube foobar >}}
+
 ## Init hugo site
 
 ```bash
@@ -154,7 +179,7 @@ For example, with static/css/custom.css and static/js/custom.js, add to `config.
 
 ```toml
 baseURL = "https://meik2333.com/"
-languageCode = "zh-cn"
+locale = "zh-cn"
 title = "MeiK's blog"
 theme = "github-style"
 pygmentsCodeFences = true
